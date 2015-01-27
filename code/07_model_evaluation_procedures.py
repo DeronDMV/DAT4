@@ -25,7 +25,7 @@ knn.score(X, y)
 from sklearn.cross_validation import train_test_split
 features = np.array([range(10), range(10, 20)]).T
 response = ['even', 'odd'] * 5
-features_train, features_test = train_test_split(features)
+features_train, features_test = train_test_split(features, random_state=5)
 features_train
 features_test
 features_train, features_test, response_train, response_test = train_test_split(features, response, random_state=1)
